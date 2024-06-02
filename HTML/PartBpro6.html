@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>import an external Image</title>
+</head>
+<body>
+<p>Image to use:</p>
+<img id="Scream" width="300" height="277" src="Kedarnath-Mandir.jpg">
+<p>Canvas:</p>
+<canvas id="myCanvas"  width="1000"  height="1000">
+</canvas>
+<script>
+window.onload=function() 
+{
+	var c=document.getElementById("myCanvas");
+	var ctx=c.getContext("2d");
+	var img=document.getElementById("Scream");
+	ctx.drawImage(img ,10,60);
+}
+</script>
+</body>
+</html>
